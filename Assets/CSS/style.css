@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* #main {} */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 10;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+.subnav:hover {
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav li:hover a {
+    background-color: #ccc;
+    color: black;
+}
+
+#nav .subnav {
+    position: absolute;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+#nav .subnav li a {
+    background-color: white;
+    min-width: 160px;
+}
+
+#nav .subnav li:hover a {
+    background: #ccc;
+    display: block;
+}
+
+#nav .subnav li a i {
+    font-size: 10px;
+}
+
+#header .search-btn {
+    display: inline-block;
+    padding: 0 24px;
+    cursor: pointer;
+    float: right;
+}
+
+#header .search-btn:hover {
+    color: #fff !important;
+    background-color: red;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 14px;
+    line-height: 46px;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url("/Assets/IMG/Slider/Slider1.jpg") top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 47px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+}
+
+#slider .text-direction {
+    font-size: 15px;
+}
+
+#content .content-section {
+    margin-left: auto;
+    max-width: 800px;
+    margin-right: auto;
+    padding: 16px;
+}
+
+.sub-heading {
+    margin: 10px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.sub-heading,
+.selogan {
+    text-align: center;
+}
+
+.selogan {
+    font-style: italic;
+    color: #ccc;
+    margin: 15px;
+}
+
+.section-content {
+    text-align: justify;
+}
+
+#content .member-list {
+    margin-top: 48px;
+    overflow: hidden;
+}
+
+#content .member-item {
+    width: calc(100% /3);
+    float: left;
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+    text-align: center;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 155px;
+    border-radius: 5px;
+}
+
+.tour-section {
+    background-color: black;
+    color: #fff;
+}
+
+.tour-section .tour-ul {
+    background-color: #fff;
+    list-style-type: none;
+    color: #757575!important;
+}
+
+.tour-section .tour-li {
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px !important;
+}
+
+.tour-section .tour-span {
+    color: #fff;
+    background-color: red;
+    padding: 0 8px;
+    display: inline-block;
+    text-align: center;
+}
+
+.tour-section .tour-span-right {
+    background-color: black;
+    border-radius: 50%;
+    float: right;
+}
+
+.tour-section .ticket-list {
+    padding: 32px 8px;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+}
+
+#content .ticket-item {
+    width: calc(100% /3);
+    /* float: left; */
+    background-color: white;
+    color: black;
+}
+
+#content .ticket-item:nth-child(2) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.tour-section .ticket-img {
+    width: 100%;
+}
+
+.ticket-img:hover {
+    opacity: 0.6px !important;
+}
+
+.tour-section .ticket-info {
+    margin: 15px;
+}
+
+.ticket-info p {
+    margin: 15px;
+    text-align: justify;
+}
+
+.tour-section .ticket-name {
+    font-weight: bold;
+}
+
+.tour-section .ticket-time {
+    color: rgb(134, 132, 132);
+}
+
+.tour-section .buy-ticket {
+    background: black;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    margin-left: 15px;
+}
+
+.tour-section .buy-ticket:hover {
+    background: #ccc;
+}
+
+.content-section .form-right {
+    border: 1px solid black;
+    display: inline-block;
+    float: left;
+}
+
+.map {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/Assets/IMG/map.jpg') top center / cover no-repeat;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .ti:hover {
+    background: #ccc;
+    opacity: 0.6;
+}
+
+.mode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.mode-open {
+    max-width: calc(100%);
+    width: 100%;
+    background: #fff;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+}
+
+.mode .mode-container {
+    max-width: calc(100% - 40px);
+    width: 900px;
+    background: #fff;
+}
+
+.mode .ti-close {
+    float: right;
+    padding: 20px;
+    color: #fff;
+}
+
+.mode .ti:hover,
+#buy-ticket:hover {
+    background: #ccc !important;
+    color: black;
+    cursor: pointer;
+}
+
+.mode .ti-bag {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.mode .mode-header {
+    height: 100px;
+    background: #009688!important;
+}
+
+h2.mode-header {
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.mode .mode-body {
+    padding: 15px 15px;
+}
+
+.mode .mode-lable {
+    padding: 15px 0;
+    float: left;
+    margin-bottom: 0px;
+}
+
+.mode-body input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+
+#buy-ticket {
+    width: 100%;
+    height: 50px;
+    background: #009688!important;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button.mode-close i.ti.ti-close {
+    padding: 2px 2px;
+}
+
+.mode-close {
+    margin: 30px 0;
+    width: 84px;
+    height: 38px;
+    background: red;
+    border: none;
+    padding: 10px 10px;
+}
+
+.mode-body .lable-footer-name {
+    margin-top: 15px;
+    padding: 20px 0;
+    text-align: right;
+    float: right;
+}
+
+.lable-footer {
+    color: #2196F3!important;
+}
