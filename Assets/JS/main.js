@@ -12,12 +12,12 @@
 //     }
 // }
 
-const Btns = document.querySelectorAll('.js-buy-ticket')
+// const Btns = document.querySelectorAll('.js-buy-ticket')
 
-function show1() {
-    alert('hi')
-}
+// function show1() {
+//     alert('hi')
+// }
 
-for (const btn of Btns) {
-    btn.addEventListener('click', show1)
-}
+// for (const btn of Btns) {
+//     btn.addEventListener('click', show1)
+// }

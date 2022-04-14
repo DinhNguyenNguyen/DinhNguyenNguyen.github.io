@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3.CSS Template</title>
 
-    <script language="javascript" src="/Assets/JS/main.js"></script>
+    <script language="javascript" src="./Assets/JS/main.js"></script>
     <link rel="stylesheet" href="./Assets/CSS/style.css">
     <link rel="stylesheet" href="./Assets/Fonts/themify-icons/themify-icons.css">
 </head>
@@ -166,10 +166,10 @@
 
         </div>
 
-        <div class="mode mode-open">
-            <div class="mode-container open ">
+        <div class="mode js-mode">
+            <div class="mode-container open">
                 <header class="mode-header ">
-                    <i class="ti ti-close"></i>
+                    <i class="ti ti-close js-mode-close"></i>
                     <h2 class=" mode-header ">
                         <i class="ti-bag "></i>Tickets
                     </h2>
@@ -204,7 +204,24 @@
 
     </div>
 
+    <script>
+        const Btns = document.querySelectorAll('.js-buy-ticket')
+        const mode = document.querySelector('.js-mode')
+        const modeClose = document.querySelector('.js-mode-close')
 
+        function showModal() {
+            mode.classList.add('mode-open')
+        }
+
+        function CloseModal() {
+            mode.classList.remove('mode-open')
+        }
+
+        for (const btn of Btns) {
+            btn.addEventListener('click', showModal)
+        }
+        modeClose.addEventListener('click', CloseModal)
+    </script>
 
 
 </body>

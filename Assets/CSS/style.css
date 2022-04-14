@@ -286,6 +286,26 @@ html {
 }
 
 .mode {
+    display: none;
+}
+
+@keyframes mode {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.mode-container {
+    animation: mode ease .5;
+}
+
+.mode-open {
+    animation: mode ease .5;
     position: fixed;
     top: 0;
     left: 0;
@@ -294,7 +314,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
+    /* display: none; */
 }
 
 .mode-open {
@@ -302,7 +322,7 @@ html {
     width: 100%;
     background: #fff;
     display: flex;
-    display: none;
+    /* display: none; */
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, .4);
